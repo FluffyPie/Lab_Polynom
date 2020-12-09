@@ -49,7 +49,7 @@ namespace Lab3_Polynome
                 Console.Write(Matrix[StringName.Length, i]);
             Console.WriteLine();
             Console.Write("");
-            Console.WriteLine(CRCTable(Encoding.GetEncoding("cp866").GetBytes(StringName)));
+            Console.WriteLine(Convert.ToString(CRCTable(Encoding.GetEncoding("cp866").GetBytes(StringName)),2));
             Console.ReadLine();
 
 
